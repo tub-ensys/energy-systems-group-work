@@ -1,0 +1,9 @@
+component,kind,c_var_other,overnight_cost,FOM,lifetime,efficiency
+Wind,power,1.623,1286467.0,15148.0,30.0,
+Solar,power,0.0,367867.0,9304.0,40.0,
+H2_electrolyser,charge_power,0.0,1257335.0,50293.0,25.0,0.6994
+H2_fuel_cell,discharge_power,0.0,1068642.0,53432.0,10.0,0.5
+H2_store,energy,0.0,1604.0,0.0,100.0,
+Battery_inverter,power,0.0,80223.0,722.0,10.0,0.96
+Battery_store,energy,0.0,100279.0,0.0,30.0,
+Line,power,0.0,1544274.0,23164.0,40.0,

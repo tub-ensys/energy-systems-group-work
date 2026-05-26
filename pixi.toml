@@ -1,0 +1,23 @@
+[workspace]
+name = "es-assignment-2026"
+version = "0.1.0"
+description = "Energy Systems Group Assignment 2026 — two-node capacity expansion model"
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[dependencies]
+python = ">=3.11,<3.13"
+linopy = "*"
+highspy = "*"          # open-source HiGHS solver used by the notebooks (solver_name="highs")
+pandas = ">=2.2,<3"
+numpy = ">=1.26,<2"
+xarray = "*"
+matplotlib-base = ">=3.9"
+ipykernel = "<=6.31"
+jupyterlab = "*"
+nbconvert = "*"
+
+[tasks]
+lab = "jupyter lab"
+# Re-run the worked solution (reads ../students/data); requires the env above.
+solve-teacher = { cmd = "jupyter nbconvert --to notebook --execute --inplace assignment.ipynb", cwd = "teachers" }
