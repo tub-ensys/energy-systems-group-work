@@ -57,13 +57,6 @@ identical inputs.
 - **Costs** in `tech_data.csv` are aligned with a `costs_2050` dataset. Annualise them
   yourself using the annuity formula at `r = 7%` (Task 1a).
 
-## Modelling notes
-
-- Each snapshot represents Δt = 3 h — use this in the storage SOC dynamics and operating cost.
-- Pro-rate the annualised investment to the modelled window with `f = T/8760 ≈ 0.077` so that
-  CAPEX and OPEX are on the same time basis and the nodal prices (balance dual ÷ Δt) come out
-  in realistic EUR/MWh.
-
 ## Submission
 
 Submit a **PDF report (max 8 pages)** plus your completed `assignment.ipynb` via ISIS by
